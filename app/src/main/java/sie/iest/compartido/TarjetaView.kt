@@ -36,6 +36,7 @@ fun TarjetasView( colorTex: Color=Color.Red, backgorund: Color=Color.Black, text
             Row (){
                 Text(text = texto + "")
                 Text(text = "123456789")
+                Text(text = "123456789")
             }
         }
     }
