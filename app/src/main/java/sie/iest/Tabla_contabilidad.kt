@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import sie.iest.myapplication.R
@@ -107,13 +108,13 @@ fun Tabla() {
                 Text(text = "Diciembre", modifier = Modifier.background(color = Color(0xFF17911F)).fillMaxWidth(), color = Color.White)
             }
             Column(modifier = Modifier.fillMaxSize().weight(1f)) {
-                Text(text = "$I1", modifier = Modifier.fillMaxWidth())
+                Text(text = "$I1", modifier = Modifier.fillMaxWidth(),fontWeight = if (cambio) FontWeight.Bold else FontWeight.Normal)
                 Text(text = "$I2", modifier = Modifier.fillMaxWidth())
                 Text(text = "$I3", modifier = Modifier.fillMaxWidth())
-                Text(text = "$I4", modifier = Modifier.fillMaxWidth())
+                Text(text = "$I4", modifier = Modifier.fillMaxWidth(),fontWeight = if (cambio) FontWeight.Bold else FontWeight.Normal)
                 Text(text = "$I5", modifier = Modifier.fillMaxWidth())
                 Text(text = "$I6", modifier = Modifier.fillMaxWidth())
-                Text(text = "$I7", modifier = Modifier.fillMaxWidth())
+                Text(text = "$I7", modifier = Modifier.fillMaxWidth(),fontWeight = if (cambio) FontWeight.Bold else FontWeight.Normal)
                 Text(text = "$I8", modifier = Modifier.fillMaxWidth())
                 Text(text = "$I9", modifier = Modifier.fillMaxWidth())
                 Text(text = "$I10", modifier = Modifier.fillMaxWidth())
