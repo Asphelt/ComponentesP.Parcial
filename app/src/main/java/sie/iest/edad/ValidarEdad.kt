@@ -18,9 +18,10 @@ import sie.iest.myapplication.R
 @Composable
 
 fun ValidarEdad(navController: NavController, edad: String?, nombre: String?, mensaje: String?) {
-    val imagen = when (edad) {
-        "60", "61" -> R.drawable.sandwich
-        else -> R.drawable.images
+    val imagen = when (edad!!) {
+        "60", "61" -> R.drawable.chavoruco
+        in "15".."17" -> R.drawable.nino
+        else -> R.drawable.chavo
     }
 
     Card(modifier = Modifier.fillMaxWidth()) {

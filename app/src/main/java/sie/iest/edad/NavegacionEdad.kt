@@ -19,10 +19,10 @@ fun NavegacionEdad(){
         composable(route = "calcular") {
             CalcularEdad(navController)
         }
-        composable(route = "verificar/{id}/{nombre}/{mensaje}") { backStackEntry ->
+        composable(route = "verificar/{edad}/{nombre}/{mensaje}") { backStackEntry ->
             ValidarEdad(
                 navController,
-                backStackEntry.arguments?.getString("id"),
+                backStackEntry.arguments?.getString("edad"),
                 backStackEntry.arguments?.getString("nombre"),
                 backStackEntry.arguments?.getString("mensaje")
             )
