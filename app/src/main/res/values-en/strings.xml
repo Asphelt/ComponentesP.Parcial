@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NUVZ</string>
+    <string name="start_message">START</string>
+    <string name="Welcome">Welcome, I will be lucky today ?</string>
+</resources>

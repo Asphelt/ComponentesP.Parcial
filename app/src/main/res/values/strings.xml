@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NUVZ</string>
+    <string name="start_message">Comenzar</string>
+    <string name="Welcome">Bienvenido, tendre suerte ?</string>
 </resources>
