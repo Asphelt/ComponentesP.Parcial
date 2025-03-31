@@ -17,10 +17,13 @@ import sie.iest.CajaDeTexto
 import sie.iest.E6lazy.ViewModels.CategoriaModel
 import sie.iest.E6lazy.ViewModels.ProductsModel
 import sie.iest.E6lazy.nav.Navegacion
+import sie.iest.datastore.NavigationManagerView
 import sie.iest.lazylist.ViewModels.StudentViewModel
 import sie.iest.lazylist.Views.SorteoView
 import sie.iest.myapplication.ui.theme.NUVZTheme
 import sie.iest.navigation.NavigationManager
+import sie.iest.practica.Content
+import sie.iest.preferencias.InfoView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +33,11 @@ class MainActivity : ComponentActivity() {
             NUVZTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                    Column(modifier = Modifier.padding(innerPadding)) {
-//                       val studentViewModel = StudentViewModel()
+//                      val studentViewModel = StudentViewModel()
 //                       SorteoView(studentViewModel)
-                       Navegacion()
+                      //InfoView()
+                       //Navegacion()
+                       NavigationManagerView()
                    }
                 }
             }

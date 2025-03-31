@@ -13,10 +13,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import sie.iest.E6lazy.nav.Navegacion
+import sie.iest.datastore.NavigationManagerView
 import sie.iest.lazylist.ViewModels.StudentViewModel
 import sie.iest.lazylist.Views.ListProuctView
 import sie.iest.lazylist.Views.SorteoView
 import sie.iest.nuvz.ui.theme.NuvzTheme
+import sie.iest.preferencias.InfoView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +28,9 @@ class MainActivity : ComponentActivity() {
             NuvzTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column (modifier = Modifier.padding(innerPadding)){
-                        Navegacion()
+                        //InfoView()
+                       //NavigationManagerView()
+                    //Navegacion()
                         //val studentViewModel = StudentViewModel()
                         //SorteoView(studentViewModel)
                     }
